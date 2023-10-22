@@ -168,3 +168,36 @@ main {
 .hidden {
   display: none;
 }
+@media (max-width: 1055px) {
+  html {
+    font-size: 59%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 737px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 547px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 475px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 401px) {
+  html {
+    font-size: 25%;
+  }
+}
