@@ -44,7 +44,7 @@ function holdGame() {
   document.querySelector(`#score--${activePlayer}`).textContent =
     scores[activePlayer];
   if (scores[activePlayer] >= 20) {
-    playAudio(`Success.mp3`)
+    playAudio(`Success.mp3`);
     diceImage.classList.add('hidden');
     playing = false;
     document
@@ -86,5 +86,5 @@ newGameBtn.addEventListener('click', function () {
   player1Active.classList.remove('player--winner');
   player0Active.classList.add('player--active');
   player1Active.classList.remove('player--active');
-  currentPlayer0Score = currentPlayer0Score.textContent = 0;
+  currentPlayer0Score.textContent = currentPlayer0Score.textContent = 0;
 });
