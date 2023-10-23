@@ -1,7 +1,7 @@
 A simple Pick Game implemented in HTML, CSS, and JavaScript. Pick Game is a two-player game where players take turns rolling a dice and accumulating points.
 The first player to reach a predefined score wins the game. 
 
-Overview
+#Overview
 This project consists of a web-based Pick Game with a visually appealing user interface. Players can roll the dice, accumulate scores, and strategically decide when to hold their current score.
 The game includes features such as player switching, dice rolling, and winner determination.
 
@@ -22,6 +22,7 @@ How to Play
 
 Installation
 1 Clone the repository:
+ https://github.com/Nifemi-Adewusi/Pick-Game.git
 
 2 Open the project folder.
 
