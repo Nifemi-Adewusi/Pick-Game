@@ -40,18 +40,21 @@ function switchActivePlayer() {
 }
 
 function holdGame() {
-  scores[activePlayer] += currentScore;
-  document.querySelector(`#score--${activePlayer}`).textContent =
-    scores[activePlayer];
-  if (scores[activePlayer] >= 100) {
-    playAudio(`Success.mp3`);
-    diceImage.classList.add('hidden');
-    playing = false;
-    document
-      .querySelector(`.player--${activePlayer}`)
-      .classList.add('player--winner');
-  } else {
-    switchActivePlayer();
+  if (playing) {
+    scores[activePlayer] += currentScore;
+    document.querySelector(`#score--${activePlayer}`).textContent =
+      scores[activePlayer];
+    if (scores[activePlayer] >= 100) {
+      playAudio(`Success.mp3`);
+      diceImage.classList.add('hidden');
+      playing = false;
+
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add('player--winner');
+    } else {
+      switchActivePlayer();
+    }
   }
 }
 
