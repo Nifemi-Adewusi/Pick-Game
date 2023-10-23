@@ -43,7 +43,7 @@ function holdGame() {
   scores[activePlayer] += currentScore;
   document.querySelector(`#score--${activePlayer}`).textContent =
     scores[activePlayer];
-  if (scores[activePlayer] >= 20) {
+  if (scores[activePlayer] >= 100) {
     playAudio(`Success.mp3`);
     diceImage.classList.add('hidden');
     playing = false;
